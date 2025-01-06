@@ -1,0 +1,11 @@
+- label: Sopraano
+  image: 1
+  audio: sop
+
+- label: Mezzo
+  image: 3
+  audio: mez
+
+- label: Baritoni
+  image: 3
+  audio: bar

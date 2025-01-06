@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <nav class="vocalises" aria-label="Vocalises">
+    <ul>
+      {% for vocalise in site.vocalises %}
+      <li>
+        <a href="{{ vocalise.url }}" title="{{ vocalise.title }}"
+          >{{ vocalise.slug }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+<div class="page">
+  <div class="page-info">
+    <h1>{{ page.orderNo }}. {{ page.title }}</h1>
+  </div>
+  <div class="content-box">
+    <div class="playing-sheet">
+      <div class="audio-control">
+        <div id="voice-selection" aria-label="Select sample by voice type">
+          {% for voice in site.data.voices %}
+          <button
+            type="button"
+            data-voice-audio="{{ voice.audio }}"
+            data-voice-image="{{ voice.image }}"
+          >
+            <span>{{ voice.label }}</span>
+          </button>
+          {% endfor %}
+        </div>
+        <audio
+          id="audio-player"
+          controls
+          src="/assets/audio/vocalise_{{ page.orderNo }}_sop.mp3"
+        />
+      </div>
+      <figure>
+        <img
+          id="vocalise-image"
+          src="/assets/notes/img/vocalise_{{page.orderNo}}_1.png"
+          alt="Nuottikuva"
+        />
+      </figure>
+    </div>
+    <aside class="additional-info">
+      <h2>Sanat &amp; käännökset</h2>
+      <div class="lyrics">{{ content }}</div>
+      <h2>PDF-tiedostot</h2>
+      <ul class="plain-list">
+        {% for sheet in site.data.sheets %}
+        <li>
+          <a
+            href="/assets/notes/pdf/vocalise_{{page.orderNo}}_{{ sheet.sheet }}.pdf"
+            download
+            >{{ sheet.type }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const setVoice = (audio, image) => {
+      document
+        .getElementById("audio-player")
+        .setAttribute(
+          "src",
+          `/assets/audio/vocalise_{{ page.orderNo }}_${audio}.mp3`
+        );
+      document
+        .getElementById("vocalise-image")
+        .setAttribute(
+          "src",
+          `/assets/notes/img/vocalise_{{page.orderNo}}_${image}.png`
+        );
+    };
+    document
+      .querySelectorAll("#voice-selection > button")
+      .forEach((element) => {
+        element.addEventListener("click", () => {
+          const audio = element.getAttribute("data-voice-audio");
+          const image = element.getAttribute("data-voice-image");
+          setVoice(audio, image);
+        });
+      });
+  })();
+</script>

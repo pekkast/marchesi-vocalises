@@ -1,0 +1,8 @@
+- type: Korkea
+  sheet: 1
+
+- type: Keskikorkea
+  sheet: 2
+
+- type: Matala
+  sheet: 3

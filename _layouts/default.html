@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+  <head>
+    <title>{{ site.title }}</title>
+    <meta
+      name="keywords"
+      content="Marchesi, Salvatore Marchesi, laulu, vokaliisit"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/layout/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header-content" href="/">
+        <img src="/assets/layout/salvatore.png" alt="Portrait of S.Marchesi" />
+        <img src="/assets/layout/signature.jpg" alt="Marchesi's signature" />
+        <img
+          class="book-cover"
+          src="/assets/layout/book-cover.jpg"
+          alt="Book of Vocalises"
+        />
+      </a>
+    </header>
+    <div class="layout">
+      <nav class="pages" aria-label="Main pages">
+        <ul>
+          {% for item in site.data.navigation %}
+          <li class="{% if page.url == item.url %}selected{% endif %}">
+            <a href="{{item.url}}">{{item.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <section class="page-container">{{ content }}</section>
+    </div>
+    <footer>
+      <a href="https://github.com/pekkast/marchesi-vocalises/issues"
+        >Something wrong or want to give feedback?</a
+      >
+    </footer>
+  </body>
+</html>
