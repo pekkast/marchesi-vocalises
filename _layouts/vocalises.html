@@ -7,7 +7,7 @@ layout: default
     <ul>
       {% for vocalise in site.vocalises %}
       <li>
-        <a href="{{ vocalise.url }}" title="{{ vocalise.title }}"
+        <a href="{{ vocalise.url | relative_url }}" title="{{ vocalise.title }}"
           >{{ vocalise.slug }}</a
         >
       </li>
