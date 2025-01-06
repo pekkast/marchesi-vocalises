@@ -5,9 +5,10 @@ layout: default
 <div class="page-header">
   <nav class="vocalises" aria-label="Vocalises">
     <ul>
-      {% for vocalise in site.vocalises %}
+      {% assign vocalises = site.vocalises | sort: "orderNo" %} {% for vocalise
+      in vocalises %}
       <li>
-        <a href="{{ vocalise.url }}" title="{{ vocalise.title }}"
+        <a href="{{ vocalise.url | relative_url }}" title="{{ vocalise.title }}"
           >{{ vocalise.slug }}</a
         >
       </li>
