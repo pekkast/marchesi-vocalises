@@ -28,7 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  pekkast
 collections: 
   vocalises:
-    permalink: :collection/:title
+    permalink: ./:collection/:title
     output: true
     sort_by: orderNo
   hints:
