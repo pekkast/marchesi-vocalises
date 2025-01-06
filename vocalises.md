@@ -5,7 +5,8 @@ permalink: /vocalises
 ---
 
 <ol>
-  {% for vocalise in site.vocalises %}
+  {% assign vocalises = site.vocalises | sort: "orderNo" %} 
+  {% for vocalise in vocalises %}
     <li>
       <a href="{{ vocalise.url | relative_url }}">{{ vocalise.title }}</a>
     </li>
