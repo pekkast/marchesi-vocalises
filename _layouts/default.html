@@ -28,7 +28,7 @@
       <nav class="pages" aria-label="Main pages">
         <ul>
           {% for item in site.data.navigation %}
-          <li class="{% if page.url == item.url %}selected{% endif %}">
+          <li class="{% if page.url.end_with?(item.url) %}selected{% endif %}">
             <a href="{{item.url}}">{{item.title}}</a>
           </li>
           {% endfor %}
