@@ -1,8 +1,8 @@
 - title: Etusivu
-  url: /
+  url: ./
 
 - title: Vokaliisit
-  url: /vocalises
+  url: vocalises
 
 - title: Ohjeita
-  url: /info
+  url: info
