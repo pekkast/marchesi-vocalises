@@ -36,13 +36,13 @@ layout: default
         <audio
           id="audio-player"
           controls
-          src="/assets/audio/vocalise_{{ page.orderNo }}_sop.mp3"
+          src="assets/audio/vocalise_{{ page.orderNo }}_sop.mp3"
         />
       </div>
       <figure>
         <img
           id="vocalise-image"
-          src="/assets/notes/img/vocalise_{{page.orderNo}}_1.png"
+          src="assets/notes/img/vocalise_{{page.orderNo}}_1.png"
           alt="Nuottikuva"
         />
       </figure>
@@ -55,7 +55,7 @@ layout: default
         {% for sheet in site.data.sheets %}
         <li>
           <a
-            href="/assets/notes/pdf/vocalise_{{page.orderNo}}_{{ sheet.sheet }}.pdf"
+            href="assets/notes/pdf/vocalise_{{page.orderNo}}_{{ sheet.sheet }}.pdf"
             download
             >{{ sheet.type }}</a
           >
@@ -73,13 +73,13 @@ layout: default
         .getElementById("audio-player")
         .setAttribute(
           "src",
-          `/assets/audio/vocalise_{{ page.orderNo }}_${audio}.mp3`
+          `assets/audio/vocalise_{{ page.orderNo }}_${audio}.mp3`
         );
       document
         .getElementById("vocalise-image")
         .setAttribute(
           "src",
-          `/assets/notes/img/vocalise_{{page.orderNo}}_${image}.png`
+          `assets/notes/img/vocalise_{{page.orderNo}}_${image}.png`
         );
     };
     document
