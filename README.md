@@ -1,6 +1,6 @@
 # Marchesin kaksikymmentä vokaliisia
 
-Tervetuloa Salvatore Marchesin, italialaisen säveltäjän, laulupedagogin sekä laulajan, Op. 15 Twenty Elementary and Progressive Vocalises _Riassunto dell' arte del canto_ -kokoelman pariin. Sivusto on jatkoa Sibelius-Akatemian [Vaccaj-toteutukselle](https://web.uniarts.fi/vaccaj/). Vaccain ja Marchesin vokaliisithan ovat keskeinen osa suomalaista laulunopetusta.
+Tervetuloa Salvatore Marchesin, italialaisen säveltäjän, laulupedagogin sekä laulajan, _Op. 15 Twenty Elementary and Progressive Vocalises - Riassunto dell' arte del canto_ -kokoelman pariin. Sivusto on jatkoa Sibelius-Akatemian [Vaccaj-toteutukselle](https://web.uniarts.fi/vaccaj/). Vaccain ja Marchesin vokaliisithan ovat keskeinen osa suomalaista laulunopetusta.
 
 Sivuston pääasiallisena tarkoituksena on tehdä Marchesin vokaliisit helpommin lähestyttäviksi ja tuoda ilmi niitten tarjoamat mahdollisuudet laulutekniikan opettelussa, sekä antaa niistä mahdollisimman oikeanlaiset lauletut esimerkit. Kappaleista on lisäksi käännökset ja ääntämisohjeet.
 
